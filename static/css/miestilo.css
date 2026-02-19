@@ -1,0 +1,476 @@
+/* ==========================================================================
+   1. CONFIGURACIÓN DE RECURSOS (Fuentes externas)
+   ========================================================================== */
+
+@font-face {
+  font-family: "Moises";
+  src: url("../fonts/staticDancingScript/DancingScript-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mesias";
+  src: url("../fonts/staticRaleway/Raleway-LightItalic.ttf") format("truetype");
+}
+
+/* ==========================================================================
+   2. RESET Y ESTILOS BASE (Normalización)
+   ========================================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Mesias";
+  font-size: 1.2rem;
+  background-color: rgba(221, 160, 221, 0.6);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   3. HEADER Y NAVEGACIÓN
+   ========================================================================== */
+
+.header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url("../img/gallery-6.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Estructura del Menú */
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #fffdfc;
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+/* Navbar y enlaces */
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 1.2rem;
+  padding: 1.3rem;
+  color: #fffdfc;
+  display: block;
+  font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+  color: rgba(255, 192, 203, 0.6);
+}
+
+/* Controles de menú móvil (Checkbox Hack) */
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+/* Contenido Principal del Header (Hero Section) */
+.header-content {
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 75px;
+  line-height: 80px;
+  color: rgba(182, 252, 77, 0.8);
+  margin-bottom: 35px;
+}
+
+.header-content p {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  padding: 0 250px;
+  margin-bottom: 25px;
+}
+
+/* Componente: Botones */
+.btn-1 {
+  display: inline-block;
+  padding: 11px 35px;
+  color: #fffdfc;
+  background-color: rgba(244, 164, 96, 0.5);
+  border-radius: 12px;
+  text-transform: uppercase;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.btn-1:hover {
+  background-color: rgba(145, 73, 21, 0.8);
+}
+
+/* ==========================================================================
+   4. SECCIÓN: COFFEE (Productos/Características)
+   ========================================================================== */
+
+.coffee {
+  padding: 100px 0;
+  background-color: rgba(204, 195, 195, 0.6);
+  position: relative;
+}
+
+.coffee-content {
+  text-align: center;
+}
+
+.coffee-content h2 {
+  font-size: 55px;
+  line-height: 70px;
+  color: #323337;
+  text-transform: uppercase;
+  padding: 0 250px;
+  margin-bottom: 15px;
+}
+
+.text-p {
+  font-size: 1rem;
+  color: #414247;
+  margin-bottom: 35px;
+}
+
+/* Cuadrícula de elementos Coffee */
+.coffee-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.coffee-1 {
+  padding: 0 25px;
+}
+
+.coffee-1 img {
+  width: 200px;
+}
+
+.coffee-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.coffee-1 h3 {
+  color: #323337;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  margin-top: 15px;
+}
+
+/* ==========================================================================
+   5. SECCIÓN: SERVICES (Banner con imagen de fondo)
+   ========================================================================== */
+
+.services {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url(../img/desserts.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+}
+
+.services-content {
+  text-align: center;
+}
+
+.services-content h2 {
+  font-size: 3.2rem;
+  line-height: 4.3rem;
+  color: #f9fafc;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}
+
+.services-content p {
+  font-size: 1rem;
+  color: #c5c5c5;
+  margin-bottom: 3.12rem;
+  padding: 0 6.25rem;
+}
+
+.services-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.12rem;
+}
+
+.service-1 {
+  padding: 0 6.25rem;
+}
+
+.service-1 img {
+  width: 2rem;
+  margin-bottom: 1rem;
+}
+
+.service-1 h3 {
+  color: #eaccb3;
+  font-size: 1.2rem;
+}
+
+/* ==========================================================================
+   6. SECCIÓN: GENERAL (Diseño en columnas 50/50)
+   ========================================================================== */
+
+.general {
+  display: flex;
+}
+
+.general-1 {
+  width: 50%;
+  padding: 5rem;
+  background-color: #eaccb3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 2px solid rgba(158, 110, 69, 0.4);
+  overflow: hidden;
+}
+
+.general-2 {
+  width: 50%;
+  background-image: url(../img/images/coffe-1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.general-3 {
+  width: 50%;
+  background-image: url(../img/images/coffee-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+
+/* Tipografía genérica de contenido */
+h2 {
+  font-size: 3.44rem;
+  line-height: 4.38rem;
+  color: #323337;
+  text-transform: capitalize;
+  margin-bottom: 1.25;
+}
+
+p {
+  font-size: 1rem;
+  color: #414247;
+  margin: 1.6rem 0 2.8rem 0;
+}
+
+/* ==========================================================================
+   7. SECCIÓN: BLOG (Noticias y actualizaciones)
+   ========================================================================== */
+
+.blog {
+  padding: 6.25rem 0;
+  text-align: center;
+}
+
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.blog-1 {
+  width: 33.33%;
+  padding: 1.44rem 3.44rem;
+}
+
+.blog-1 img {
+  width: 100%;
+  max-width: 25rem;
+  height: 15.63rem;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  margin-bottom: 1rem;
+}
+
+.blog-1 h3 {
+  font-size: 1.6rem;
+  color: #323337;
+}
+
+/* ==========================================================================
+   8. FOOTER (Pie de página)
+   ========================================================================== */
+
+.footer {
+  padding: 6.25rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* El contenedor de las 4 columnas */
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Reparte las columnas */
+    flex-wrap: wrap;               /* Si la ventana es pequeña, se acomodan solas */
+    padding: 40px 0;
+    background-color: #1a1a1a;     /* Un gris muy oscuro casi negro */
+    color: white;
+}
+
+/* Títulos de las columnas */
+.link h3 {
+    font-family: 'Dancing Script', cursive; /* Usando tu fuente elegante */
+    color: #ff9f43;
+    margin-bottom: 20px;
+}
+
+/* Quitar los puntos de las listas */
+.link ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo de los enlaces e iconos */
+.link ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #bdc3c7;
+    margin-bottom: 12px;
+    transition: 0.3s; /* Para que el cambio de color sea suave */
+}
+
+/* El icono específicamente */
+.link ul li a i {
+    font-size: 1.5rem;   /* Tamaño del icono */
+    margin-right: 15px;  /* Espacio entre icono y texto */
+    color: #ff9f43;      /* Color naranja/café */
+}
+
+/* Efecto al pasar el ratón (Hover) */
+.link ul li a:hover {
+    color: white;
+    padding-left: 10px; /* Un pequeño empujón a la derecha */
+}
+
+/* ==========================================================================
+   9. MEDIA QUERIES (Diseño Responsivo)
+   ========================================================================== */
+
+/* Tablets y Laptops pequeñas (991px) */
+@media (max-width: 991px) {
+  .menu { padding: 20px; }
+  .menu label { display: block; }
+  
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+  }
+  
+  .navbar ul li { width: 100%; }
+  #menu:checked ~ .navbar { display: block; }
+
+  .header-content h1 {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  
+  .header-content p, 
+  .coffee-content h2, 
+  .services-content p {
+    padding: 0;
+  }
+}
+
+/* Móviles (768px) */
+@media (max-width: 768px) {
+  .coffee-group, 
+  .services-group, 
+  .blog-content, 
+  .general, 
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .general-1, 
+  .general-2, 
+  .general-3, 
+  .blog-1, 
+  .coffee-1 {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .coffee-img { display: none; }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  .link {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+/* --- PRUEBA DE ESPECIFICIDAD --- */
+
+/* Por defecto, el h1 del header es el que definimos antes */
+
+/* Pero si estamos en la página de servicios, lo queremos naranja */
+.page-servicios .header-content h1 {
+    color: #e67e22; 
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+/* Y si estamos en el blog, queremos que el fondo del body sea un poco más oscuro */
+.page-blog {
+    background-color: #f2f2f2;
+}

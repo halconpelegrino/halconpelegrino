@@ -1,0 +1,13 @@
+# Ignorar archivos de sistema
+.DS_Store
+thumbs.db
+
+# Ignorar archivos de trabajo de Ruby/Generador
+generador.rb
+src/
+templates/
+proyecto_01/
+
+# Ignorar archivos temporales
+*.log
+tmp/
